@@ -1,6 +1,5 @@
 # WikiAds-WebApp
 
-This project is a simple web application that interacts with a backend server to fetch and display categories and advertisements.
 
 ## Project Structure
 
