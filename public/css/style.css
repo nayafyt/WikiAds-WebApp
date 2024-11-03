@@ -1,0 +1,538 @@
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    padding: 5px 0;
+    text-align: left;
+    border-top: 2px solid black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+#upper-footer {
+    order: 1;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+#middle-footer {
+    order: 2;
+}
+
+#upper-footer a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: #034053;
+    color: #034053;
+}
+
+#middle-footer address {
+    font-size: 15px;
+    font-weight: normal;
+    display: inline-table;
+}
+
+#middle-footer ul li {
+    margin-bottom: 10px;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+#middle-footer .social {
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 3%;
+}
+
+#middle-footer img {
+    height: 25px;
+    width: 25px;
+}
+
+#middle-footer a {
+    text-decoration: none;
+    color: #034153;
+    margin: 0 4px;
+}
+
+#middle-footer a:hover {
+    text-decoration: underline;
+}
+
+.validator p {
+    margin-right: 8%;
+    float: right;
+}
+
+footer p {
+    margin: 0;
+    margin-top: 1%;
+    padding-left: 35px;
+    margin-bottom: 1%;
+}
+
+#lower-footer {
+    order: 3;
+    border-top: 1px solid #0C2E3F;
+}
+
+header {
+    grid-area: header;
+    background-color: white;
+    /* Θέτουμε το χώρο ως προς το ύψος του αντικειμένου που είναι ανάλογο των
+    αντικειμένων στο εσωτερικό του-που περικλύει*/
+    height: 100%;
+    align-items: center;
+    /* Εμφανίζουμε μία απλή γραμμή του περιγράμματος */
+    border-bottom: 2px solid black;
+    /* Μορφοποιούμε όλα τα στοιχεία του header να είναι μαύρου χρώματος και
+    έντονης γραφής με ορισμένο μέγεθος- κυρίως για την ονομασία της ιστοσελίδας*/
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+header h1 {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #034053ae;
+    color: rgb(87, 87, 87);
+}
+
+.generateSP {
+    list-style-type: none;
+    margin-bottom: 5%;
+    margin-left: 15%;
+}
+
+.generateSP:hover {
+    color: #034153;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    background-image: linear-gradient(to bottom right, #557788, #BEBAB7);
+    background-size: cover;
+    background-repeat: repeat;
+    overflow-x: hidden;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(255, 255, 255, 0.95);
+    row-gap: 30px;
+    margin-left: 2%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-right: 2%;
+    overflow: hidden;
+    padding: 10px 100px 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#categImage {
+    border-radius: 10px;
+    height: 120px;
+}
+
+
+/* Category.html */
+
+
+/* Style the ad container */
+
+.ad-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: start;
+    /* Horizontally center items */
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Style the advertisement title */
+
+.ad-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.dets {
+    display: flex;
+    align-items: center;
+    /* Vertically align items in the center */
+}
+
+
+/* Style the advertisement image container */
+
+.containerimg {
+    flex: 0 0 auto;
+    /* Do not grow or shrink, maintain its size */
+    margin-right: 20px;
+    /* Space between the image and text */
+}
+
+
+/* Style the advertisement image */
+
+.containerimg img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+
+/* Style the advertisement details container */
+
+
+/* Style the advertisement description */
+
+.details p {
+    float: right;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: black;
+}
+
+
+/* Style the advertisement cost */
+
+#adv-cost {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+/* Slideshow container styling */
+
+.adContainer {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+/* Title styling */
+
+.adContainer h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Slideshow container styling */
+
+.slideshow-container {
+    width: 50%;
+    /* Adjust as per your design */
+    float: left;
+}
+
+.mySlides {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    display: none;
+}
+
+
+/* Position the previous and next buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    width: auto;
+    position: relative;
+    top: -50px;
+    left: 22%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 10px 6px 10px #034053ae;
+    background-color: rgba(3, 64, 83, 0.5);
+    border-radius: 5px 5px;
+}
+
+.prev:hover,
+.next:hover {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(3, 64, 83, 0.1);
+}
+
+
+/* Details container styling */
+
+.details {
+    width: 40%;
+    float: left;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cost {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Features styling */
+
+
+/* Base styling for the Extra Features section */
+
+.features {
+    clear: both;
+    margin-top: 20px;
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.features h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #034153;
+}
+
+
+/* Features styling */
+
+.features table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.features table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.features table td {
+    padding: 8px 12px;
+    text-align: center;
+}
+
+
+/* Alternate row background color for better readability */
+
+.features table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.features table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* Styling login form */
+
+.login {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login h1 {
+    text-align: center;
+    color: #034153;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#message {
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+}
+
+article {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #034153;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 380px;
+}
+
+button {
+    background-color: #034153;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 12px 20px;
+    margin: 0 auto;
+    /* Add this line to center the button horizontally */
+    display: block;
+}
+
+button:hover {
+    background-color: #022b3a;
+}
+
+.fav-button {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: black;
+}
+
+.fav-button:hover {
+    background-color: red;
+    border-color: red;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+
+/* Styling for the favorites-link-container */
+
+#favorites-link-container {
+    text-align: center;
+    margin: 5%;
+}
+
+#favorites-link-container a {
+    padding: 10px;
+    color: #034153;
+    font-weight: bold;
+    border: 2px solid #034153;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#favorites-link-container a:hover {
+    color: #319ebf;
+    text-shadow: #034053;
+    border-color: #319ebf;
+}
+
+
+/* Alerts on adding favorites on list */
+
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#alertFooter {
+    margin-top: 20px;
+}
+
+#alertFooter button {
+    font-size: 15px;
+    padding: 5px;
+    background-color: rgba(102, 156, 183, 0.3);
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 5px 1px rgba(102, 156, 183, 0.3);
+    color: black;
+}
+
+#alertFooter button:hover {
+    background-color: rgba(102, 156, 183, 0.5);
+    box-shadow: none;
+    font-weight: bold;
+}
+
+
+/* Styling for the favorites-link-container */
+
+#favoriteslink {
+    text-align: center;
+    margin: 2%;
+}
+
+#favoriteslink a {
+    color: #034153;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#favoriteslink a:hover {
+    color: #319ebf;
+    text-shadow: #034053;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 18px;
+    }
+    main {
+        padding: 0px;
+    }
+    footer {
+        padding: 5px;
+    }
+}

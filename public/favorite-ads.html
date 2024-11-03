@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Αγαπημένες Αγγελίες</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars/dist/handlebars.min.js"></script>
+    <script src="js/favorites.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="catID">
+        </h1>
+    </header>
+    <main>
+        <div id="content">
+            <section id="category"></section>
+            <section id="advertisements"></section>
+
+            <script id="category-ads-template" type="text/x-handlebars-template">
+
+
+                {{#each advertisements}}
+                <div class="ad-container">
+                    <h2 class="ad-title">{{adId}} {{title}}</h2>
+                    <div class="dets">
+                        <div class="containerimg">
+                            <img id="adv-image" src="https://wiki-ads.onrender.com/{{imageUrl}}" alt="{{title}}">
+                        </div>
+                        <div class="details">
+                            <p>{{description}}</p>
+                            <h3 id="adv-cost">{{cost}}€</h3>
+
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+    </main>
+    <footer>
+        <div id="upper-footer">
+            <a href="index.html">WikiAds</a>
+        </div>
+
+        <div id="middle-footer">
+            <ul>
+                <li>
+                    Τηλέφωνο:<address> <a href="tel:+302101234567">+30 2101234567</a></address>
+                </li>
+                <li>
+                    Email:<address><a href="mailto:info@WikiAds.gr">info@WikiAds.gr</a></address>
+                </li>
+            </ul>
+
+            <div class="social">
+
+                <address><a href="https://www.facebook.com/" target="_blank"><img src="css/facebook-icon.png"  alt="facebook-icon"></a></address>
+
+                <address><a href="https://www.instagram.com" target="_blank"><img src="css/instagram-icon.png"  alt="instagram-icon"></a></address>
+
+            </div>
+
+            <p>
+                Αν αντιμετωπίζετε οποιαδήποτε πρόβλημα<a href="contact_form.html">contact us</a>
+            </p>
+
+            <div class="validator">
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+                    </a>
+                </p>
+            </div>
+
+        </div>
+        <div id="lower-footer">
+            <p>
+                Copyright &copy;2023;Designed by Iliana and Panagiota- All rights reserved
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
