@@ -1,5 +1,7 @@
 # WikiAds-WebApp
+This project is a web application designed to display categorized advertisements by fetching data from a backend server. Users can browse through various categories and view related ads. Built with HTML, CSS, JavaScript, and the Fetch API, it provides a dynamic browsing experience.
 
+***Note: The backend server is currently offline***
 
 ## Project Structure
 
