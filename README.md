@@ -1,40 +1,64 @@
-# inf165-webdev-project
-Βασική δομή ενός project για τις ανάγκες της εργασίας 2 του μαθήματος INF165.
+# WikiAds-WebApp
+
+This project is a simple web application that interacts with a backend server to fetch and display categories and advertisements.
+
+## Project Structure
 
 ```bash
-.
-├── index.js
-├── models
-└── public
-    ├── index.html
-    ├── css
-    |   └── style.css
-    └── js
-        └── main.js
+├── [index.js]
+├── models/
+│   └── contacts.js
+├── [package.json]
+├── public/
+│   ├── category.html
+│   ├── css/
+│   │   └── style.css
+│   ├── favorite-ads.html
+│   ├── index.html
+│   ├── js/
+│   │   ├── ads.js
+│   │   ├── [categories.js]
+│   │   ├── favorites.js
+│   │   └── [main.js]
+│   └── subcategories.html
 ```
-
-Οι απαραίτητες εξαρτήσεις υπάρχουν ήδη στο package.json. 
-Μπορείτε να τις εγκαταστήσετε με χρήση της εντολής
+## Installation
+To install the necessary dependencies, run:
 ```
 npm install
 ```
-
-Για να δοκιμάσετε την εφαρμογή σας μπορείτε να την ξεκινήσετε με την εντολή
+## Running the Application
+To start the application, run:
 ```
 node index.js
 ```
+## Technical Details
 
-Βέβαια, μετά από κάθε αλλαγή στον κώδικα του server θα πρέπει να κάνετε επανεκκίνηση της εφαρμογής. Για διευκόλυνσή σας μπορείτε να ξεκινήσετε την εφαρμογή με τη βοήθεια του εργαλείου nodemon ως εξής:
+***Backend***
+- Express: The backend server is built using Express, a minimal and flexible Node.js web application framework.
+- UUID: Used for generating unique identifiers.
 
-```
-nodemon index.js
-```
+***Frontend***
+- HTML/CSS: The frontend is built using standard HTML and CSS.
+- JavaScript: The client-side logic is implemented in JavaScript.
+- Handlebars: A templating engine used to dynamically generate HTML content.
+- Fetch API: Used for making HTTP requests to the backend server.
 
-Κάθε φορά που αλλάζετε τον κώδικα του server, το nodemon επανεκκινεί αυτόματα τον server.
+## File Descriptions
+- index.js: The main entry point for the backend server.
+- models/contacts.js: Contains the data model for contacts.
+- public/index.html: The main HTML file for the application.
+- public/css/style.css: The main CSS file for styling the application.
+- public/js/main.js: Contains the main client-side JavaScript code.
+- public/js/categories.js: Contains JavaScript code for handling categories.
+- public/js/ads.js: Contains JavaScript code for handling advertisements.
+- public/js/favorites.js: Contains JavaScript code for handling favorite ads.
 
-## Χρήσιμες βιβλιοθήκες
+## Usage
+The application fetches categories and advertisements from the backend server and displays them on the frontend. Users can view categories, subcategories, and advertisements. They can also log in and manage their favorite ads.
 
-- [Handlebars](https://handlebarsjs.com/guide/): γλώσσα για τη σύνταξη υποδειγμάτων (templates) για δυναμική παραγωγή HTML περιεχομένου,
-- [expressjs](https://expressjs.com/en/guide/routing.html): γρήγορη υλοποίηση υπηρεσιών ιστού,
-- [uuid](https://www.npmjs.com/package/uuid): παραγωγή μοναδικών αναγνωριστικών,
-- [nodemon](https://www.npmjs.com/package/nodemon): εργαλείο για αυτόματη επανεκκίνηση μιας Node.js εφαρμογής, σε περίπτωση αλλαγών στα αρχεία της εφαρμογής.
+## Author
+This was a group project that was created as part of the Web Application Programming course.
+
+
+
